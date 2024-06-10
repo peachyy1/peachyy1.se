@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffcedf;
+  font-family: "Jost";
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .header-logo {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav {
+  font-size: 2rem;
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .nav a {
+  text-decoration: none;
+  color: black;
+}
+.header .nav a :hover {
+  color: salmon;
+}
+.header .nav .nav-home {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .nav-about {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .nav-gallery {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-wrap {
+  width: 75%;
+  height: 75%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer-wrap .footer-info {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer-wrap .footer-info .footer-info-vectors {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-wrap .footer-info .footer-info-vectors .location-vector {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-info .footer-info-vectors .phone-vector {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-info .footer-info-vectors .mail-vector {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-info .footer-info-text {
+  height: 100%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.footer .footer-wrap .footer-info .footer-info-text .location-text {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-info .footer-info-text .phone-text {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-info .footer-info-text .mail-text {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-logo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-wrap .footer-socials {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer-wrap .footer-socials .twitter {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-socials .insta {
+  border: 1px solid black;
+}
+.footer .footer-wrap .footer-socials .tiktok {
+  border: 1px solid black;
+}/*# sourceMappingURL=App.css.map */
