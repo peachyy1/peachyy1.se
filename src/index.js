@@ -9,9 +9,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
+import Header from '../src/components/Header/Header.js';
 
-
-export default function App2() {
+export default function RoutePaths() {
   return (
     <BrowserRouter>
       <Routes>
@@ -29,6 +29,7 @@ export default function App2() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header />
     <App />
   </React.StrictMode>
 );
