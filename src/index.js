@@ -10,27 +10,46 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
 import Header from '../src/components/Header/Header.js';
+import global_en from "./translations/en/global.json";
+import global_swe from "./translations/swe/global.json";
+import i18next from 'i18next';
+import { I18nextProvider } from 'react-i18next';
+
+i18next.init({
+  interpolation: { escapeValue: true },
+  lng: "en",
+  resources: {
+    en: {
+      global: global_en
+    },
+    swe: {
+      global: global_swe
+    }
+  }
+})
 
 export default function RoutePaths() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <App />
+    <I18nextProvider i18n={i18next}>
+      <BrowserRouter>
+        <Header />
+        <App />
+      </BrowserRouter>
+    </I18nextProvider>
   </React.StrictMode>
 );
 
