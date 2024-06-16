@@ -10,23 +10,28 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
 import Header from '../src/components/Header/Header.js';
+import i18next from 'i18next';
+import { I18nextProvider, initReactI18next } from 'react-i18next';
 import global_en from "./translations/en/global.json";
 import global_swe from "./translations/swe/global.json";
-import i18next from 'i18next';
-import { I18nextProvider } from 'react-i18next';
 
-i18next.init({
-  interpolation: { escapeValue: true },
-  lng: "en",
-  resources: {
-    en: {
-      global: global_en
-    },
-    swe: {
-      global: global_swe
+i18next
+  .use(initReactI18next)
+  .init({
+    interpolation: { escapeValue: false },
+    lng: "en",
+    fallbackLng: "en",
+    ns: ["global"],
+    defaultNS: "global",
+    resources: {
+      en: {
+        global: global_en
+      },
+      swe: {
+        global: global_swe
+      }
     }
-  }
-})
+  })
 
 export default function RoutePaths() {
   return (
@@ -47,6 +52,7 @@ root.render(
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
         <Header />
+        <RoutePaths />
         <App />
       </BrowserRouter>
     </I18nextProvider>

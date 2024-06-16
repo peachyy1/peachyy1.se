@@ -13,7 +13,7 @@ function Header() {
     return (
         <header className="header">
             <HeaderLogo className="header-logo" />
-            <HeaderNav className="header-nav" />
+            {/* <HeaderNav className="header-nav" /> */}
             <button onClick={() => handleChangeLanguage("en")}>EN</button>
             <button onClick={() => handleChangeLanguage("swe")}>SWE</button>
             <div>{t("header.message")}</div>

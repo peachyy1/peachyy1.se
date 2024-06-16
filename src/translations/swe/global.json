@@ -2,6 +2,17 @@
     "header": {
         "message": "Välkommen till peachyy1.se"
     },
+    "heading": {
+        "home": "Hem",
+        "about": "Om",
+        "gallery": "Galleri",
+        "error": "404 - Hittas ej"
+    },
+    "nav": {
+        "home": "Hem",
+        "about": "Om",
+        "gallery": "Galleri"
+    },
     "home": {
         "body": "En webbsida om peachyy1"
     }

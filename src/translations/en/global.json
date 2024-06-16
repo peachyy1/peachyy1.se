@@ -2,6 +2,17 @@
     "header": {
         "message": "Welcome to peachyy1.se"
     },
+    "heading": {
+        "home": "Home",
+        "about": "About",
+        "gallery": "Gallery",
+        "error": "404 - Not Found"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "gallery": "Gallery"
+    },
     "home": {
         "body": "A website about peachyy1"
     }

@@ -6,6 +6,9 @@ const Home = () => {
 
     return (
         <div>
+            {/* <h1>
+                {t("headingHome.title")}
+            </h1> */}
             <p>
                 {t("home.body")}
             </p>
