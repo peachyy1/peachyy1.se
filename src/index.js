@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
-import Header from '../src/components/Header/Header.js';
+import Header from '../src/components/Header/Header.jsx';
 import i18next from 'i18next';
 import { I18nextProvider, initReactI18next } from 'react-i18next';
 import global_en from "./translations/en/global.json";

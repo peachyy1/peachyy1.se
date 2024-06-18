@@ -13,7 +13,7 @@ function Dropdown() {
         <div className="dropdown-menu">
             <ul className="dropdown-ul">
                 <li className="en" onClick={() => handleChangeLanguage("en")}>EN</li>
-                <li className="swe" onClick={() => handleChangeLanguage("swe")}>SWE</li>
+                <li className="swe" onClick={() => handleChangeLanguage("swe")}>SV</li>
             </ul>
         </div>
     )
