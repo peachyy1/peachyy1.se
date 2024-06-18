@@ -9,9 +9,13 @@ function Header() {
     const [t] = useTranslation("global");
     const [openDropdownMenu, setOpenDropdownMenu] = useState(false);
     const dropdownRef = useRef(null);
+    const buttonRef = useRef(null);
 
     const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        if (
+            dropdownRef.current && !dropdownRef.current.contains(event.target) &&
+            buttonRef.current && !buttonRef.current.contains(event.target)
+        ) {
             setOpenDropdownMenu(false);
         }
     };
@@ -22,6 +26,11 @@ function Header() {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
+    const handleDropdownButtonClick = (event) => {
+        event.stopPropagation();
+        setOpenDropdownMenu((prev) => !prev);
+    }
 
     return (
         <header>
@@ -34,10 +43,16 @@ function Header() {
                 </nav>
             </div>
             <div className="dropdown-container">
-                <button className="dropdown-button" onClick={() => setOpenDropdownMenu((prev) => !prev)}>
+                <button
+                    className="dropdown-button"
+                    onClick={handleDropdownButtonClick}
+                    ref={buttonRef}
+                >
                     {t("language.lang")}
                 </button>
-                {openDropdownMenu && <div ref={dropdownRef}><Dropdown /></div>}
+                {openDropdownMenu &&
+                    <div ref={dropdownRef}><Dropdown closeDropdown={() => setOpenDropdownMenu(false)} />
+                    </div>}
             </div>
         </header>
     );

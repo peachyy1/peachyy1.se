@@ -2,11 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 
-function Dropdown() {
+function Dropdown({ closeDropdown }) {
     const { i18n } = useTranslation("global");
 
     const handleChangeLanguage = (lang) => {
         i18n.changeLanguage(lang);
+        closeDropdown();
     }
 
     return (
