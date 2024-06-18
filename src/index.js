@@ -52,10 +52,14 @@ root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
-        <Header />
-        <RoutePaths />
-        <Footer />
-        <App />
+        <div className="site-container">
+          <Header />
+          <div className="content">
+            <RoutePaths />
+          </div>
+          <Footer />
+          <App />
+        </div>
       </BrowserRouter>
     </I18nextProvider>
   </React.StrictMode>

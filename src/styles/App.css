@@ -10,6 +10,16 @@ body {
   background-color: darksalmon;
 }
 
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
 header {
   border: 1px solid black;
   width: 100%;
