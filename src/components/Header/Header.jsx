@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as HeaderLogo } from "../../assets/svgs/header-logo.svg";
+import { ReactComponent as HeaderLogo } from "../../assets/svgs/peach-header.svg";
 import "../../styles/App.scss";
 import { useTranslation } from "react-i18next";
 import Dropdown from "../Dropdown/Dropdown";
@@ -24,7 +24,7 @@ function Header() {
     }, []);
 
     return (
-        <header className="header">
+        <header>
             <HeaderLogo className="header-logo" />
             <div className="nav-container">
                 <nav>
@@ -38,7 +38,6 @@ function Header() {
                     {t("language.lang")}
                 </button>
                 {openDropdownMenu && <div ref={dropdownRef}><Dropdown /></div>}
-                {/* <div>{t("header.message")}</div> */}
             </div>
         </header>
     );
