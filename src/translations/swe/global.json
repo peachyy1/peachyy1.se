@@ -2,9 +2,6 @@
     "language": {
         "lang": "Svenska"
     },
-    "header": {
-        "message": "Välkommen till peachyy1.se"
-    },
     "heading": {
         "home": "Hem",
         "about": "Om",
@@ -16,7 +13,12 @@
         "about": "Om",
         "gallery": "Galleri"
     },
-    "home": {
-        "body": "En webbsida om peachyy1"
+    "anime": {
+        "header": "Mina favoritanime"
+    },
+    "footer": {
+        "location": "Jorden",
+        "phone": "N/A",
+        "mail": "Brevlåda"
     }
 }

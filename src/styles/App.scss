@@ -195,6 +195,10 @@ body {
     flex: 1;
 }
 
+svg {
+    filter: drop-shadow($drop-shadow-banner);
+}
+
 header {
     border: $border;
     width: 100%;
@@ -308,6 +312,28 @@ nav a:active {
     color: darksalmon;
 }
 
+.anime-banner {
+    display: flex;
+    justify-content: center;
+
+    .anime-banner-main {
+        min-width: 1000px;
+        min-height: 250px;
+        // max-width: 2000px;
+        // max-height: 250px;
+        width: 1000px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 100% 75%;
+    }
+}
+
+.anime-header {
+    display: flex;
+    justify-content: center;
+}
+
+
 footer {
     border: $border;
     width: 100%;
@@ -407,7 +433,7 @@ footer {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            // gap: 5px;
+            gap: 5px;
 
             .github {
                 border: $border;

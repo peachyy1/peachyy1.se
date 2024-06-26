@@ -2,9 +2,6 @@
     "language": {
         "lang": "English"
     },
-    "header": {
-        "message": "Welcome to peachyy1.se"
-    },
     "heading": {
         "home": "Home",
         "about": "About",
@@ -16,7 +13,12 @@
         "about": "About",
         "gallery": "Gallery"
     },
-    "home": {
-        "body": "A website about peachyy1"
+    "anime": {
+        "header": "My favorite anime"
+    },
+    "footer": {
+        "location": "Earth",
+        "phone": "N/A",
+        "mail": "Mailbox"
     }
 }
