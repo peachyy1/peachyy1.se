@@ -1,6 +1,6 @@
 // import React from "react";
 import { useTranslation } from "react-i18next";
-import animeBanner from "../../assets/images/anime/anime-banners/wp12205285.jpg";
+import animeBanner from "../../assets/images/anime/anime-banners/anime-banner.jpg";
 
 const AnimeBanner = () => {
     const [t] = useTranslation("global");

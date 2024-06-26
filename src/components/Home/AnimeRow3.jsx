@@ -3,34 +3,34 @@ const AnimeRow3 = () => {
         <>
             <div className="anime-row-3">
                 <div className="anime-row-3-col-1">
-                    <div className="anime-row-3-col-1-card">
+                    <div className="anime-card">
 
                     </div>
-                    <div className="anime-row-3-col-1-text">
+                    <div className="anime-text">
 
                     </div>
                 </div>
                 <div className="anime-row-3-col-2">
-                    <div className="anime-row-3-col-2-card">
+                    <div className="anime-card">
 
                     </div>
-                    <div className="anime-row-3-col-2-text">
+                    <div className="anime-text">
 
                     </div>
                 </div>
                 <div className="anime-row-3-col-3">
-                    <div className="anime-row-3-col-3-card">
+                    <div className="anime-card">
 
                     </div>
-                    <div className="anime-row-3-col-3-text">
+                    <div className="anime-text">
 
                     </div>
                 </div>
                 <div className="anime-row-3-col-4">
-                    <div className="anime-row-3-col-4-card">
+                    <div className="anime-card">
 
                     </div>
-                    <div className="anime-row-3-col-4-text">
+                    <div className="anime-text">
 
                     </div>
                 </div>

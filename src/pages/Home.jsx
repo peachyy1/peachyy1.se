@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <h1>{t("heading.home")}</h1>
             <AnimeBanner />
-            <AnimeRow1 />
+                <AnimeRow1 />
         </div>
     );
 }
