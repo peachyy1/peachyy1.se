@@ -6,6 +6,7 @@ $anime-card-width: 250px;
 $anime-card-height-small: 350px;
 $anime-card-height-large: 375px;
 $anime-text-gradient: linear-gradient(180deg, #E53FC1 0%, #4743ED 100%);
+$card-border: 15px;
 $footer-gradient: linear-gradient(180deg, #ED6243 0%, #4743ED 100%);
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
@@ -346,6 +347,7 @@ nav a:active {
     width: 100%;
 
     .anime-card {
+        display: flex;
         width: $anime-card-width;
         height: $anime-card-height-large;
     }
@@ -353,6 +355,11 @@ nav a:active {
     .anime-card img {
         width: $anime-card-width;
         height: $anime-card-height-large;
+        border-radius: $card-border;
+    }
+
+    .anime-card a {
+        width: $anime-card-width;
     }
 
     .anime-text p {
@@ -366,7 +373,7 @@ nav a:active {
         font-size: 11px;
         background: $anime-text-gradient;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 15px;
+        border-radius: $card-border;
     }
 }
 

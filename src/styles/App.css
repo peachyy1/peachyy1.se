@@ -160,12 +160,17 @@ nav a:active {
   width: 100%;
 }
 .anime-row-1 .anime-card {
+  display: flex;
   width: 250px;
   height: 375px;
 }
 .anime-row-1 .anime-card img {
   width: 250px;
   height: 375px;
+  border-radius: 15px;
+}
+.anime-row-1 .anime-card a {
+  width: 250px;
 }
 .anime-row-1 .anime-text p {
   display: flex;
