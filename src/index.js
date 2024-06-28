@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
 import Header from '../src/components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import Anime1 from './pages/home-pages/Anime1.jsx';
 import i18next from 'i18next';
 import { I18nextProvider, initReactI18next } from 'react-i18next';
 import global_en from "./translations/en/global.json";
@@ -39,6 +40,7 @@ export default function RoutePaths() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="/evangelion" Component={Anime1} />
         <Route path="about" element={<About />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="*" element={<NoPage />} />

@@ -7,6 +7,7 @@ $anime-card-height-small: 350px;
 $anime-card-height-large: 375px;
 $anime-text-gradient: linear-gradient(180deg, #E53FC1 0%, #4743ED 100%);
 $card-border: 15px;
+$card-text-padding: 10px 15px 10px 15px;
 $footer-gradient: linear-gradient(180deg, #ED6243 0%, #4743ED 100%);
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
@@ -16,175 +17,6 @@ $footer-gradient: linear-gradient(180deg, #ED6243 0%, #4743ED 100%);
     padding: 0;
     box-sizing: border-box;
 }
-
-// body {
-//     min-height: 100vh;
-//     background-color: #ffcedf;
-//     font-family: 'Jost';
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .header {
-//     width: 100%;
-//     min-height: 200px;
-//     border: $border;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-evenly;
-
-//     .header-logo {
-//         border: $border;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-
-//     .nav {
-//         font-size: 2rem;
-//         width: 50%;
-//         height: 100px;
-//         border: $border;
-//         display: flex;
-//         justify-content: space-evenly;
-//         align-items: center;
-
-//         a {
-//             text-decoration: none;
-//             color: black;
-
-//             :hover {
-//                 color: salmon;
-//             }
-//         }
-
-//         .nav-home {
-//             border: $border;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//         }
-
-//         .nav-about {
-//             border: $border;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//         }
-
-//         .nav-gallery {
-//             border: $border;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//         }
-//     }
-// }
-
-// .content {
-//     flex: 1;
-// }
-
-// .footer {
-//     width: 100%;
-//     min-height: 300px;
-//     border: $border;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     .footer-wrap {
-//         width: 75%;
-//         height: 75%;
-//         border: $border;
-//         display: flex;
-//         justify-content: space-evenly;
-//         align-items: center;
-
-//         .footer-info {
-//             width: 200px;
-//             height: 200px;
-//             border: $border;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-evenly;
-//             align-items: center;
-
-//             .footer-info-vectors {
-//                 border: $border;
-//                 display: flex;
-//                 flex-direction: column;
-//                 gap: 10px;
-
-//                 .location-vector {
-//                     border: $border;
-//                 }
-
-//                 .phone-vector {
-//                     border: $border;
-//                 }
-
-//                 .mail-vector {
-//                     border: $border;
-//                 }
-//             }
-
-//             .footer-info-text {
-//                 height: 100%;
-//                 font-size: 1.5rem;
-//                 border: $border;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: space-evenly;
-//                 gap: 20px;
-
-//                 .location-text {
-//                     border: $border;
-//                 }
-
-//                 .phone-text {
-//                     border: $border;
-//                 }
-
-//                 .mail-text {
-//                     border: $border;
-//                 }
-//             }
-//         }
-
-//         .footer-logo {
-//             width: 150px;
-//             height: 150px;
-//             border: $border;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-
-//         }
-
-//         .footer-socials {
-//             width: 200px;
-//             height: 200px;
-//             border: $border;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: space-evenly;
-//             align-items: center;
-
-//             .twitter {
-//                 border: $border;
-//             }
-
-//             .insta {
-//                 border: $border;
-//             }
-
-//             .tiktok {
-//                 border: $border;
-//             }
-//         }
-//     }
-// }
 
 body {
     font-family: 'Jost';
@@ -318,11 +150,11 @@ nav a:active {
     color: darksalmon;
 }
 
-.anime-banner {
+.anime-banner-home {
     display: flex;
     justify-content: center;
 
-    .anime-banner-main {
+    .anime-banner-home-main {
         min-width: 1000px;
         min-height: 250px;
         // max-width: 2000px;
@@ -334,7 +166,7 @@ nav a:active {
     }
 }
 
-.anime-header {
+.anime-header-main {
     display: flex;
     justify-content: center;
     color: #E5E5E5;
@@ -345,38 +177,65 @@ nav a:active {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-
-    .anime-card {
-        display: flex;
-        width: $anime-card-width;
-        height: $anime-card-height-large;
-    }
-
-    .anime-card img {
-        width: $anime-card-width;
-        height: $anime-card-height-large;
-        border-radius: $card-border;
-    }
-
-    .anime-card a {
-        width: $anime-card-width;
-    }
-
-    .anime-text p {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px 15px 10px 15px;
-        margin-top: 25px;
-        width: $anime-card-width;
-        height: 100px;
-        color: #E5E5E5;
-        font-size: 11px;
-        background: $anime-text-gradient;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: $card-border;
-    }
 }
 
+.anime-row-2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.anime-row-3 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.anime-card {
+    display: flex;
+    width: $anime-card-width;
+    height: $anime-card-height-large;
+}
+
+.anime-card img {
+    width: $anime-card-width;
+    height: $anime-card-height-large;
+    border-radius: $card-border;
+}
+
+.anime-card a {
+    width: $anime-card-width;
+}
+
+.anime-text p {
+    display: flex;
+    justify-content: space-evenly;
+    padding: $card-text-padding;
+    margin-top: 25px;
+    width: $anime-card-width;
+    height: 100px;
+    color: #E5E5E5;
+    font-size: 11px;
+    background: $anime-text-gradient;
+    box-shadow: $drop-shadow-cards;
+    border-radius: $card-border;
+}
+
+.anime-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.anime-banner img {
+    min-width: 1920px;
+    min-height: 533px;
+    width: 1920px;
+    height: 533px;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
 
 footer {
     border: $border;
