@@ -214,16 +214,23 @@ nav a:active {
 .anime-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 200px;
 }
 
 .anime-container-left {
   display: flex;
   flex-direction: column;
+  position: relative;
+  bottom: 150px;
+  gap: 50px;
 }
 
 .anime-container-right {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  margin-top: 56px;
 }
 
 .anime-banner {
@@ -268,6 +275,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
   padding: 40px;
   font-size: 0.6875rem;
   color: #FFF;
@@ -309,6 +317,9 @@ nav a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 60.6%;
+  gap: 10px;
   background: #3D3D3D;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
